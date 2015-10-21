@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#Michael Radov
+#Mike R
 #Queries User for service to kill. Then kills script. Written using Python 3.5
 
 import os
