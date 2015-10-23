@@ -1,0 +1,20 @@
+#!/usr/bin/env python
+#Author: Mike R
+#write simple handler to catch control c and mock user
+import signal
+import platform
+
+def ctrlc_handler(signum, frm):
+	print "Haha! You cannot kill me!"
+
+def ctrlZ_handler(signum, frm):
+	print "Aren't you having fun?!?!?! Why try to kill me!"
+
+print "installing signal handler ..."
+signal.signal(signal.SIGINT, ctrlc_handler)
+signal.signal(signal.SIGTSTP, ctrlZ_handler)
+
+print "done!"
+
+while True:
+	pass
